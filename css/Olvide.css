@@ -1,0 +1,25 @@
+.olvidemicontraseña{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.olvidemicontraseña:hover {
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.registrarme{
+	   color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.registrarme:hover{
+	    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}

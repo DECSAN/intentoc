@@ -1,0 +1,253 @@
+@import 
+    /*Fuente utilizada*/
+    
+    url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+
+    /*Propiedades generales*/
+	*{
+		 
+        margin: 0;
+		padding: 10;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+        
+	}
+
+    /*Cuerpo, Fondo de pantalla*/
+	body{
+        
+        
+		background: url(https://i.pinimg.com/originals/fd/5a/d6/fd5ad69f54b402fb9fb44adbae448426.jpg);
+		/*background-size: 100vw 100% ;*/
+       
+        background-size: cover;
+        background-attachment: fixed;
+    
+		background-repeat: no-repeat;*/
+        
+        /*"https://drive.google.com/uc?id=1vxZtJdYbTLtNT5qyIdR1PRRHBzJFxaDz"*/
+       
+	}
+    /*Capa de Filtro oscuro para la imagen de fondo*/
+
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+         
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		top: 0;left: 0;
+        background-color:rgba(208, 92, 128, 0.5);
+        position: absolute;/*para que se esconda la barra superior*/
+	}
+
+    /*Contenedor de inicio categorias*/
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+    /*Contenedor del menu*/
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:90px;
+	}
+    /*Contenedor de las lineeas horizontales del menu*/
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+    /*Estilos del menu*/
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+        
+        
+	}
+    /*Estilos de contenedor General derecho donde esta el carrito de compra*/
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+    /*Estilos individuales de contenedor derecho*/
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+    /*Efecto de color en contenedor derecho*/
+	.container .menu a:hover{
+		border-bottom: 2px solid #D61B82;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+
+	/*Menù lateral izquierdo para que se despliegue*/
+	#btn-menu{
+		display: none;
+	}
+/*/
+capa negra que se despliega de izquierda a derecha
+/*/
+
+
+    /*Efecto de menu izquierdo efecto de filtro oscuro*/
+	.container-menu{
+		position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 1000ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+    /*Complemento de contenedor del menu para que sea visible*/
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+    /*Propiedades de menu izquierdo para configurar velociadad y mas*/
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: fixed;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+/*Margen o separacion de menu izquierdo */
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+    /*Altura o separacion de margen superior de menu izquierdo*/
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+    /*Contenedores de menu izquierdo  enpezando por ofertas*/
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 15px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+        
+	}
+    /*Efecto de seleccion de opciones de menu izquierdo*/
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+     /*Boton de cerrar*/
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+      
+	}
+
+ 
+
+	/*Fin de Menù lateral*/
+
+
+
+
+/*Nombre de usuario estilo*/
+#name {
+    color: aquamarine;
+    text-align-last: center;
+    
+}
+
+
+/*Imagen de perfil centrada*/
+#perfil {
+  
+     text-align-last: center;
+}
+/*Imagen de perfil con bordes redondeados*/
+#perfil img{
+     border-radius: 50%;
+    
+}
+/*--------Contenido de los productos-----------*/
+
+
+/*Contenedores de imagen*/
+.contenido-producto{
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0,1);
+    background-color: white;
+}
+
+.contenido-producto:hover{
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,0,2);
+}
+/*Tamaño de contenedores de imagenes*/
+.contenido-producto img{
+    width: 300px;
+    
+}
+/*Estilos de h2 (precio)*/
+.contenido-producto h2{
+    margin-bottom: 0px;
+    margin-left: 15px;
+    background-color: white;/* en duda de dejarlo fondo blanco precio*/ 
+}
+
+/*para redimencionar el espacio de las imagenes*/
+.contenido-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 80px solid ;
+    
+}
+
+/*Estilos de boton*/
+.button-add {
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 10px; 
+    background-color: white;
+    color: black;
+    border: px solid #4CAP50;/*color verde*/
+    transition-duration: 0.4s;
+    position: absolute;/*Posiscion del boton*/
+    right: 15px;
+    bottom: 5px;
+}
+/*Animacion de boton*/
+.button-add:hover{
+    background-color: #4CAF50;/* color verde del boton*/
+    color: white;
+}

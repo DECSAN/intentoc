@@ -1,0 +1,41 @@
+.prueba{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+
+}
+.prueba thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.prueba th,
+.prueba td {
+    padding: 12px 15px;
+}
+.prueba tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.prueba tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.prueba tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.prueba  tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}

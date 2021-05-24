@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+<!-- Sirve para codificacion de caracteres -->
+    
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="css/login2.css">
+
+
+
+
+</head>
+
+<body>
+
+    <form action="conexion.php" method="POST">
+<!-- Mandar a llamar la pagina de conexion.php -->
+
+        <h1>Registrate</h1>
+
+        <label for="NOMBRE" class="color-text">Nombre: </label>
+
+        <input type="text" name="NOMBRE" id="NOMBRE">
+
+        <br>
+
+        <label for="APELLIDO_PATERNO" class="color-text">Apellido Paterno: </label>
+
+        <input type="text" name="APELLIDO_PATERNO" id="APELLIDO_PATERNO">
+
+        <label for="APELLIDO_MATERNO" class="color-text">Apellido Materno: </label>
+
+        <input type="text" name="APELLIDO_MATERNO" id="APELLIDO_MATERNO">
+
+        <br>
+
+        <label for="CORREO" class="color-text">Correo: </label>
+
+        <input type="email" name="CORREO" id="CORREO" required>
+
+        <br>
+        
+        <label for="TELEFONO"class="color-text">Telefono: </label>
+
+        <input type="text" name="TELEFONO" id="TELEFONO">
+
+        <br>
+
+        <label for="CONTRASEÑA"class="color-text">Contraseña: </label>
+
+        <input type="password" name="CONTRASEÑA" id="CONTRASEÑA">
+
+        <br>
+            <input type="submit" value="Registrarse" id="enviar">
+            <!-- Mandar la informacion de el formulario -->
+            <input type="reset" value="Limpiar Datos"></input>        
+    </form>
+
+</body>
+
+</html>

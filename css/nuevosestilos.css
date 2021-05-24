@@ -1,0 +1,32 @@
+.fondo {
+
+ 
+    margin: auto;
+    padding: 25px;
+    
+    width: 35%;
+
+
+/* para que este centrada la imagen*/
+} 
+
+.fondo2{
+    margin-left: 31%;
+    border-left: 10pc;
+  
+    padding-left: 0%;
+    width: 30%; 
+    text-align-last: center;
+}/* Informacion centrada*/
+.nombree{
+
+    background-color:NONE;
+    font-size: 35x;
+    color: black;
+    font-family: cursive;
+    width: 60%;
+
+    text-align-last: center;
+    margin-left: 10%; 
+}/* titulo centradi imagen*/
+
